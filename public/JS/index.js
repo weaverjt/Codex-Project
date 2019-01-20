@@ -6,13 +6,12 @@ that I put in---at a later date.
  */
 
 
-  $("button1").click(function(){
-    $("ballMenuContainer").hide();
-    $("inForm").show();
+  $("#button1").click(function button1(){
+    $("firstSet").hide();
+    $("secondSet").show();
         });
 
-  $("button2").click(function(){
-    $("ballMenuContainer").hide();
-    $("upForm").show();
+  $("#button2").click(function button2(){
+    $("firstSet").hide();
+    $("thirdSet").show();
   });
-
