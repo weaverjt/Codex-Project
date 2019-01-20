@@ -1,0 +1,1 @@
+//html page routes for server.js file

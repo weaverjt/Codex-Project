@@ -6,7 +6,12 @@
     <title>wordApi Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
-    <script src="wordApi.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <!-- This is a test product.
@@ -18,17 +23,80 @@
 -->
 
 <body>
+
+<div class="container">    
+    <div class="row">
+        <div class="col-md-6">
+
+    <div class="row" id="loginButton">
+        <div id="menuBall1" class="menuBall">
+            <button id="button1">
+            <a class="ball blueball">
+               <div class="menuText">
+                    Sign-In
+               </div>
+            </a>
+        </button>
+        </div>
+    </div>          
     
-    <nav>
-        
-    </nav>
+    <div class="row" id="registerButton">
+        <div id="menuBall2" class="menuBall">
+           <button id="button2"> <a class="ball redball">
+                <div class="menuText">
+                    Sign-Up
+                </div>
+            </a>
+            </button>
+        </div>
+    </div>
 
-    <h1>
-        <!-- the wordApi plug in here-->
+        </div>
+    </div>
 
-    </h1>
+    <div class="row" id="forms">
+        <div class="form" id="inForm">
+                <div class="login-wrap">
+                        <div class="login-html">
+                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+                            <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Forgot Password</label>
+                            <div class="login-form">
+                                <div class="sign-in-htm">
+                                    <div class="group">
+                                        <label for="user" class="label">Username or Email</label>
+                                        <input id="user" type="text" class="input">
+                                    </div>
+                                    <div class="group">
+                                        <label for="pass" class="label">Password</label>
+                                        <input id="pass" type="password" class="input" data-type="password">
+                                    </div>
+                                    <div class="group">
+                                        <input type="submit" class="button" value="Sign In">
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                                <div class="for-pwd-htm">
+                                    <div class="group">
+                                        <label for="user" class="label">Username or Email</label>
+                                        <input id="user" type="text" class="input">
+                                    </div>
+                                    <div class="group">
+                                        <input type="submit" class="button" value="Reset Password">
+                                    </div>
+                                    <div class="hr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
 
+    <div class="form" id="upForm"></div>
 
+</div>
+
+<script src="JS\index.js"></script>
 
 </body>
+
 </html>
