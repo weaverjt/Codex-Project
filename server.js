@@ -1,26 +1,37 @@
-//Server script and Routes tie in...(copied initially from fable-farm server file)
+const express = require('express')
+const app = express()
 
-var express = require("express");
-var bodyParser = require("body-parser");
-
-var app = express();
-var PORT = process.env.PORT || 8080;
-
-var db = require("./models");
-
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
-
-app.use(express.static("public"));
-
-//API ROUTES---
-
-require("./routes/api-routes.js")(app);
-require("./routes/html-routes.js")(app);
+var mysql = require('mysql');
 
 
-db.sequelize.sync({force: true}).then(function() {
-    app.listen(PORT, function () {
-        console.log("App listening on PORT " + PORT)
-    })
+var con = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "root",
+    database: "codex_db"
+  });
+  
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
+
+app.use((request, response, next) => {
+  console.log(request.headers)
+  next()
 })
+
+app.use((request, response, next) => {
+  request.chance = Math.random()
+  next()
+})
+
+app.get('/', (request, response) => {
+  response.json({
+    chance: request.chance
+  })
+})
+
+app.listen(3000)
+
+

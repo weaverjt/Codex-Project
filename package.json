@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/weaverjt/Codex-Project#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "gojs": "^2.0.0",
+    "mysql": "^2.16.0",
     "p5": "^0.7.3"
   }
 }

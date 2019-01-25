@@ -7,96 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/homeStyle.css" />
 
-        <!-- Bootstrap Links -->
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
 
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 </head>
 
-<!-- This is a test product.
-    I hope to accomplish 3 goals:
-        1. gain an understanding of the WordApi
-        2. Create code which tracks writing and complies stats
-        3. Create a JS object(s) which can essentially hold a Character's profile and hold the various stats (see 2)
-        associated with them. [i.e. how many times they've said this, the amount of times they've been angry/sad etc., etc.]
--->
-
 <body>
-
-<div class="container" id="firstSet">    
-    <div id="loginButton">
-        <div id="menuBall1" class="menuBall">
-            <button id="button1">
-            <a class="ball blueball">
-               <div class="menuText">
-                    Sign-In
-               </div>
-            </a>
-        </button>
-        </div>
-    </div>          
-    
-    <div id="registerButton">
-        <div id="menuBall2" class="menuBall">
-           <button id="button2"> <a class="ball redball">
-                <div class="menuText">
-                    Sign-Up
-                </div>
-            </a>
-            </button>
-        </div>
-    </div>
-
-        </div>
-    </div>
-
-<div class="container" id="secondSet">
-        <div class="form" id="inForm">
-                <div class="login-wrap">
-                        <div class="login-html">
-                            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
-                            <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Forgot Password</label>
-                            <div class="login-form">
-                                <div class="sign-in-htm">
-                                    <div class="group">
-                                        <label for="user" class="label">Username or Email</label>
-                                        <input id="user" type="text" class="input">
-                                    </div>
-                                    <div class="group">
-                                        <label for="pass" class="label">Password</label>
-                                        <input id="pass" type="password" class="input" data-type="password">
-                                    </div>
-                                    <div class="group">
-                                        <input type="submit" class="button" value="Sign In">
-                                    </div>
-                                    <div class="hr"></div>
-                                </div>
-                                <div class="for-pwd-htm">
-                                    <div class="group">
-                                        <label for="user" class="label">Username or Email</label>
-                                        <input id="user" type="text" class="input">
-                                    </div>
-                                    <div class="group">
-                                        <input type="submit" class="button" value="Reset Password">
-                                    </div>
-                                    <div class="hr"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        </div>
-    </div>
-
-<div class="container" id="thirdSet">
-    <div class="form" id="upForm"></div>
-    </div>
+        
+                        <div id="holder">
+                            <div id="target">
+                               
+                                    <ul class="nav nav-pills">
+                                            <li class="button"><a data-toggle="pill" href="#login">Login</a></li>
+                                            <li class="button"><a data-toggle="pill" href="#signUp">Sign-Up</a></li>
+                                          </ul>
+                                          
+                                          <div class="tab-content">
+                                            <div id="login" class="tab-pane fade in active">
+                                              <h3>Login Here!</h3>
+                                              <p>Login Form</p>
+                                            </div>
+                                            <div id="signUp" class="tab-pane fade">
+                                              <h3>Sign-Up here!</h3>
+                                              <p>Sign-Up Form</p>
+                                            </div>
+                                          
+                                          </div>
 
 
-<script src="JS\index.js"></script>
+                            </div><!-- target -->
+                        </div><!-- holder -->
 
 </body>
 
